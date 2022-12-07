@@ -19,7 +19,26 @@ header{
     /* border: 4px solid red; */ /*gives border of the element*/
     /* margin: 40px; */ /* sits beyond border*/ 
 }
+
 header h1{
     font-size: 40px;
+}   
 
+.card {/* . tells css to look for a class, here called card, in the html file*/
+    width: 300px;
+    height: auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    color: midnightblue;
+    box-shadow: 5px 5px 5px 5px lightgrey; /* 5px to right | 5px down | opacity | blur | colour*/  
+    margin: 20px;
+}
+
+.card img {
+    margin: 10px;
+    min-height: 300px;
+    border-radius: 30px;
 }
