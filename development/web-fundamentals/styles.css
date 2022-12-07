@@ -42,3 +42,18 @@ header h1{
     min-height: 300px;
     border-radius: 30px;
 }
+
+h2, h3, h4, h5, h6 {
+    text-decoration: underline;
+    font-size: 30;
+
+}
+
+#penelope-list{ /* # tells css to look for an id, here called penelope-list, in the html file*/
+    list-style-type: none;
+} 
+
+span{
+    font-size: 1.5em; /* 1.5 times larger than parent code*/
+    color: #b48ce0; /* hexidecimal colour code */
+}
