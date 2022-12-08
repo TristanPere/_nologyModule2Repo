@@ -4,6 +4,11 @@
     font-family: 'Tahoma, Segoe UI', Geneva, Verdana, sans-serif;
 }
 
+*::selection{
+    color: white;
+    background-color: #1182EB;
+}
+
 body{
     background-color: white;
     max-width: 1400px;
@@ -24,6 +29,17 @@ header h1{
     font-size: 40px;
 }   
 
+
+/*
+h1::before{
+    content: "$$";
+}
+h1::first-letter{
+    color: red;
+    font-size: 60px;
+}
+*/
+
 .card {/* . tells css to look for a class, here called card, in the html file*/
     width: 300px;
     height: auto;
@@ -35,6 +51,12 @@ header h1{
     color: midnightblue;
     box-shadow: 5px 5px 5px 5px lightgrey; /* 5px to right | 5px down | opacity | blur | colour*/  
     margin: 20px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover{
+    opacity: 1;
 }
 
 .card img {
@@ -45,13 +67,17 @@ header h1{
 
 h2, h3, h4, h5, h6 {
     text-decoration: underline;
-    font-size: 30;
-
+    font-size: 30px;
 }
 
 #penelope-list{ /* # tells css to look for an id, here called penelope-list, in the html file*/
     list-style-type: none;
 } 
+
+li:hover {
+    color: #1182EB;
+}
+
 
 span{
     font-size: 1.5em; /* 1.5 times larger than parent code*/
